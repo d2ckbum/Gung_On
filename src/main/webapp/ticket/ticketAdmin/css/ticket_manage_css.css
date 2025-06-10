@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+.topSearch{
+	float:left;;
+}
+
+.wrapTableBody:hover{
+	background-color: #CCCCCC;
+	cursor:pointer;
+}
+.wrapTableBodyv:active{
+	background-color: #CCCCCC;
+}
+
+
