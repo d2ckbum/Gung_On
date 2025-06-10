@@ -1,7 +1,7 @@
 <%@page import="kr.co.gungon.member.MemberService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" info=""%>
-<%-- <%@ include file="../common/jsp/site_config.jsp"%> --%>
+<%-- <%@ include file="/common/jsp/site_config.jsp"%> --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%session.getAttribute("userData"); 
 MemberService ms = new MemberService();
@@ -13,7 +13,7 @@ MemberService ms = new MemberService();
 <head>
 <meta charset="UTF-8">
 <title>SEARCH - 아이디 찾기 / 비밀번호 찾기</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
+<link rel="stylesheet" href="/common/css/common.css">
 <c:import url="/common/jsp/external_file.jsp"/>
 
 <script>
@@ -66,7 +66,7 @@ $(function(){
 </head>
 <body class="page-body">
 	<!-- 상단 메뉴 등 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 	<div class="search-container">
 		<h1 class="title">
 			<strong>아이디 /  비밀번호 찾기</strong>
@@ -100,6 +100,6 @@ $(function(){
 		</div>
 	</div>
 	<!-- 푸터 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

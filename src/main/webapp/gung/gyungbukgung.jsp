@@ -7,8 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>경복궁</title>
-<c:import url="../common/jsp/external_file.jsp"/>
-<link rel="stylesheet" href="../common/css/common.css">
+<c:import url="/common/jsp/external_file.jsp"/>
+<link rel="stylesheet" href="/common/css/common.css">
 <link rel="stylesheet" href="mainGung.css">
 <link rel="stylesheet" href="sideTab.css">
 <style>

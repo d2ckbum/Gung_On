@@ -2,7 +2,7 @@
 <%@page import="kr.co.gungon.member.login.LoginService"%>
 <%@ page language="java" contentType="application/json; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%-- <%@ include file="../common/jsp/site_config.jsp" %> --%>
+<%-- <%@ include file="/common/jsp/site_config.jsp" %> --%>
 <%
 //1. 한글처리
 request.setCharacterEncoding("UTF-8");

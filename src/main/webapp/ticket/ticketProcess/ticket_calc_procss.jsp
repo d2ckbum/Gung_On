@@ -38,4 +38,4 @@ tDTO.setPaymentTimeStamp(paymentTimeStamp);
 request.setAttribute("ticketDTO", tDTO);
 
 %>
-<jsp:forward page="../ticketPaymentCompleteFrm.jsp"/>
+<jsp:forward page="/ticket/ticketPaymentCompleteFrm.jsp"/>

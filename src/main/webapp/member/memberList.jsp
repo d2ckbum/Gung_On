@@ -28,7 +28,7 @@
     List<MemberDTO> memberList = dao.getMemberList(start, end);
 %>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/custom.css">
+<link rel="stylesheet" href="/css/custom.css">
 <div id="layoutSidenav_content">
 
 <script type="text/javascript">

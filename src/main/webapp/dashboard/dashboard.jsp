@@ -5,7 +5,7 @@
 <%
     String adminId = (String) session.getAttribute("admin_id");
     if (adminId == null) {
-        response.sendRedirect("../adminLoginForm.jsp");
+        response.sendRedirect("/adminLoginForm.jsp");
         return;
     }
 

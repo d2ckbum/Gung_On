@@ -9,7 +9,7 @@
 <html>
 <head>
 <!-- favicon 설정 -->
-<link rel="icon shortcut"  href="http://${defaultIP}${pageContext.request.contextPath}/common/images/cs/gungOnFavicon.ico"/>
+<link rel="icon shortcut"  href="/common/images/cs/gungOnFavicon.ico"/>
 <meta charset="UTF-8">
 <title>예매 관리</title>
 
@@ -17,10 +17,10 @@
 <%@ include file="/admin/common/sidebar.jsp" %>
 
 <!-- 스타일 설정 -->
-<link href="http://${defaultIP}${pageContext.request.contextPath}/ticket/ticketAdmin/css/ticket_manage_css.css" rel="stylesheet">
+<link href="/Gung_On/ticket/ticketAdmin/css/ticket_manage_css.css" rel="stylesheet">
 <!-- CSS 설정 -->
-<link rel="stylesheet" type="text/css" href="http://${defaultIP}${pageContext.request.contextPath}/ticket/css/payment.css"/>
-<link rel="stylesheet" type="text/css" href="http://${defaultIP}${pageContext.request.contextPath}/ticket/css/paymentComplete.css"/>
+<link rel="stylesheet" type="text/css" href="/Gung_On/ticket/css/payment.css"/>
+<link rel="stylesheet" type="text/css" href="/Gung_On/ticket/css/paymentComplete.css"/>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <!-- 부트스트랩  CDN -->    
@@ -70,7 +70,7 @@ $(function(){
 <body>
 <div class="entireWrap" style="margin-left:300px; margin-top:100px">
 <div class="title">
- <img src="${pageContext.request.contextPath}/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">  
+ <img src="/Gung_On/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">  
  <span class="titlep" style="font-weight:bold; font-size:35px">예매 관리</span>
 </div>
 <br><br>

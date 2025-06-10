@@ -3,7 +3,7 @@
 <% if (session.getAttribute("id") != null && session.getAttribute("changePass") != null ) { 
 	  String id =(String) session.getAttribute("id");
 }else{
-	response.sendRedirect("${pageContext.request.contextPath}/login/login.jsp");
+	response.sendRedirect("/login/login.jsp");
 }
    %>
    
@@ -11,8 +11,8 @@
 <html>
 <head>
     <title>비밀번호 변경</title>
-     <link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
-     <c:import url="${pageContext.request.contextPath}/common/jsp/external_file.jsp"/>
+     <link rel="stylesheet" href="/common/css/common.css">
+     <c:import url="/common/jsp/external_file.jsp"/>
      
      <script>
      $(function(){

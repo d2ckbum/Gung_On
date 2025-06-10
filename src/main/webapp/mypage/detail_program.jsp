@@ -10,7 +10,7 @@
     pageEncoding="UTF-8"
     info=""%>
 <%@ include file="/common/jsp/login_chk.jsp" %>
-<%-- <%@ include file="../common/jsp/site_config.jsp" %> --%>
+<%-- <%@ include file="/common/jsp/site_config.jsp" %> --%>
 <%-- <%@ include file="/common/jsp/login_chk.jsp" %> --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
@@ -54,8 +54,8 @@ FilePathService fps = new FilePathService();
 <html lang="ko">
 <head>
 <!-- 기타 공통 스타일 -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
-  <c:import url="${pageContext.request.contextPath}/common/jsp/external_file.jsp"/>
+  <link rel="stylesheet" href="/common/css/common.css">
+  <c:import url="/common/jsp/external_file.jsp"/>
   <meta charset="UTF-8">
   <title>예약내역 변경/취소</title>
   <style>

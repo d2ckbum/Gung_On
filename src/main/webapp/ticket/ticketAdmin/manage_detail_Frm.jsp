@@ -10,7 +10,7 @@
 <html>
 <head>
 <!-- favicon 설정 -->
-<link rel="icon shortcut"  href="http://${defaultIP}${pageContext.request.contextPath}/common/images/cs/gungOnFavicon.ico"/>
+<link rel="icon shortcut"  href="/common/images/cs/gungOnFavicon.ico"/>
 <link href="css/ticket_manage_detail_css.css" rel="stylesheet">
 
 
@@ -43,7 +43,7 @@ $(function(){
 
 <div class="" id="tab1" role="tabpanel">
 
-<img src="${pageContext.request.contextPath}/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">
+<img src="/Gung_On/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">
 <span class="titlep" style="font-weight:bold; font-size:35px">예매 정보 상세</span>
 </div>
 

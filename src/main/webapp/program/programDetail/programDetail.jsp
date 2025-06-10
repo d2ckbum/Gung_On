@@ -31,8 +31,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>행사 상세 정보</title>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
-  <link rel="stylesheet" href="../programDetail/programDetail.css" />
+  <link rel="stylesheet" href="/common/css/common.css">
+  <link rel="stylesheet" href="/programDetail/programDetail.css" />
   
   <style>
 
@@ -41,7 +41,7 @@
 </head>
 <body>
 <header>
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp" />
+  <jsp:include page="/common/jsp/header.jsp" />
 </header>
 
 <div class="sub_visual">
@@ -147,7 +147,7 @@
 </div>
 
 <footer>
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp" />
+  <jsp:include page="/common/jsp/footer.jsp" />
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

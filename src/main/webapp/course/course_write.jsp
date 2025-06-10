@@ -43,7 +43,7 @@
   <link rel="stylesheet" type="text/css" href="/course/css/users_course_style.css" />
   <c:import url="/common/jsp/external_file.jsp"/>
 =======
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/course/css/users_course_style.css" />
+	<link rel="stylesheet" type="text/css" href="/course/css/users_course_style.css" />
 	<c:import url="/common/jsp/external_file.jsp"/>
 
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
@@ -156,7 +156,7 @@
 <<<<<<< HEAD
   <jsp:include page="/common/jsp/header.jsp" />
 =======
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp" />
+  <jsp:include page="/common/jsp/header.jsp" />
 
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
   
@@ -239,7 +239,7 @@
   </main>
 
   
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp" />
+  <jsp:include page="/common/jsp/footer.jsp" />
 
   <script>
     var $j = jq;

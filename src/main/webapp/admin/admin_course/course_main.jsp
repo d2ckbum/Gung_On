@@ -331,7 +331,7 @@ $(document).ready(function() {
                 <main>
                     <div class="container-fluid px-4">
                     	<div style="display: flex; align-items: center;">
-   						 	<img src="${pageContext.request.contextPath}/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">
+   						 	<img src="/Gung_On/common/images/mainpage/header_icon.png" style="/* width: 120px; height: 100px; */  margin-right: 10px; ">
     						<h1 class="mt-4">사용자 추천 코스 관리</h1>
 						</div>
                         

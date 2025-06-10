@@ -85,7 +85,7 @@ input[type="button"] {
 <div class="popup_box">
     <div class="info_wrap" style="display:none" >
         <div class="info_img">
-            <img src="./images/banner2.png"/>
+            <img src="/images/banner2.png"/>
         </div>
         <div class="info_text">
             <p>예약 안내</p>

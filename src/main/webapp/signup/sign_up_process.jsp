@@ -3,7 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     info=""%>
-<%-- <%@ include file="../common/jsp/site_config.jsp" %> --%>
+<%-- <%@ include file="/common/jsp/site_config.jsp" %> --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <c:import url="/common/jsp/external_file.jsp"/>
- <link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
+ <link rel="stylesheet" href="/common/css/common.css">
 
 <style type="text/css">
 </style>
@@ -26,7 +26,7 @@ $(function(){
 </head>
 <body>
 <header>
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp"/>
+  <jsp:include page="/common/jsp/header.jsp"/>
 </header>
 <main>
 
@@ -69,7 +69,7 @@ request.setCharacterEncoding("UTF-8");
 <h2>회원가입이 정상적으로 이루어지지 않았습니다.</h2>
 </div>
 <h3>잠시 후 다시 시도해주세요.</h3>
-<a href="${pageContext.request.contextPath}/mainpage/mainpage.jsp">메인화면</a>
+<a href="/mainpage/mainpage.jsp">메인화면</a>
 <a href="javascript:history.back()" class="btn btn-danger btn-sm">다시시도</a>
 </c:otherwise>
 
@@ -84,7 +84,7 @@ request.setCharacterEncoding("UTF-8");
 
 </main>
 <footer>
- <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp"/>
+ <jsp:include page="/common/jsp/footer.jsp"/>
   
 </footer>
 

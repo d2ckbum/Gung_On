@@ -31,9 +31,9 @@ if (numStr != null && !numStr.isEmpty()) {
   <title>공지사항 미리보기</title>
 
   <!-- CSS 포함 (원래 사이트 스타일 유지) -->
-  <link rel="stylesheet" type="text/css" href="../royal_css/common.css" />
-  <link rel="stylesheet" type="text/css" href="../royal_css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../royal_css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/royal_css/common.css" />
+  <link rel="stylesheet" type="text/css" href="/royal_css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="/royal_css/layout.css" />
   <link rel="stylesheet" href="cs_common/mainCSS.css">
 <script>
   function editFaq(faqNum) {
