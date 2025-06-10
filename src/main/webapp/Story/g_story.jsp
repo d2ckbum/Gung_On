@@ -92,20 +92,12 @@
   <% if (imageCount > 0) { %>
   <div class="slider-container">
     <div class="slider-images" id="imageSlider">
-<<<<<<< HEAD
-<% for (FilePathDTO img : imageList) {
-     String rawPath = img.getPath();  // "/common/images/..."
-     // "Gung_On" 중복 제거
-     String path = rawPath.replaceFirst("^${pageContext.request.contextPath}", ""); // 앞의 Gung_On 제거
-     String fullPath = request.getContextPath() + path;
-=======
 <% 
     for (FilePathDTO img : imageList) {
         String rawPath = img.getPath();  // 예: /common/images/gung/...
         String contextPath = request.getContextPath(); // 예: /Gung_On
         String path = rawPath.startsWith(contextPath) ? rawPath.substring(contextPath.length()) : rawPath;
         String fullPath = contextPath + path;
->>>>>>> branch 'final' of https://github.com/d2ckbum/Gung_On.git
 %>
       <img src="<%= fullPath %>" alt="스토리 이미지">
 <% } %>
