@@ -8,7 +8,7 @@ pageContext.getAttribute("userData");
 <html>
 <head>
     <title>회원탈퇴</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
+    <link rel="stylesheet" href="/common/css/common.css">
     <c:import url="/common/jsp/external_file.jsp"/>
     
 <script type="text/javascript">
@@ -34,7 +34,7 @@ $(function(){
 		  success: function(jsonObj){
 			  if (jsonObj.removeFlag) {
 			        alert("탈퇴 완료");
-			        location.href="${pageContext.request.contextPath}/login/logout.jsp";
+			        location.href="/login/logout.jsp";
 			      } else {
 			        alert("탈퇴 실패");
 			      }
@@ -47,7 +47,7 @@ $(function(){
 </head>
 <body class="login">
 <!-- 상단 메뉴 등 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 <div class="login-container" style="width: 450px; height: 290px;">
     <h2>회원탈퇴</h2>
     
@@ -62,6 +62,6 @@ $(function(){
 
 </div>
 <!-- 푸터 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

@@ -5,7 +5,7 @@
 
 <%
 
-    String jdbcUrl = "jdbc:oracle:thin:@192.168.10.72:1521:orcl";
+    String jdbcUrl = "jdbc:oracle:thin:@211.63.89.140:1521:orcl";
     String dbUser = "admin";
     String dbPass = "tiger";
 

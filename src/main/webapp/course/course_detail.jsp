@@ -22,7 +22,7 @@
 <<<<<<< HEAD
   <link rel="stylesheet" href="/course/css/users_course_style.css" />
 =======
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/course/css/users_course_style.css" />
+  <link rel="stylesheet" href="/course/css/users_course_style.css" />
   <%-- external_file.jsp (필요시 주석 해제 및 경로 수정) --%>
   <%-- <c:import url="/common/jsp/external_file.jsp"/> --%> 
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
@@ -155,7 +155,7 @@
 <<<<<<< HEAD
         background-image: url('/course/course_img/ico-star-empty.svg'); /* 빈 별 이미지 경로 */
 =======
-        background-image: url('${pageContext.request.contextPath}/course/course_img/ico-star-empty.svg'); /* 빈 별 이미지 경로 */
+        background-image: url('/course/course_img/ico-star-empty.svg'); /* 빈 별 이미지 경로 */
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
         background-repeat: no-repeat;
         background-size: 40px;
@@ -165,7 +165,7 @@
 <<<<<<< HEAD
         background-image: url('/course/course_img/ico-star-full.svg'); /* 꽉 찬 별 이미지 경로 */
 =======
-        background-image: url('${pageContext.request.contextPath}/course/course_img/ico-star-full.svg'); /* 꽉 찬 별 이미지 경로 */
+        background-image: url('/course/course_img/ico-star-full.svg'); /* 꽉 찬 별 이미지 경로 */
         /* background-position: left; /* LTR 기준 채워진 별 위치 (필요시 명시) */
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
     }
@@ -215,7 +215,7 @@
 </head>
 
 <body class="main">
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp" />
+  <jsp:include page="/common/jsp/header.jsp" />
 
   <main>
     <div class="container">
@@ -336,7 +336,7 @@
     </div>
   </main>
 
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp" />
+  <jsp:include page="/common/jsp/footer.jsp" />
 
  <script>
     const rateWrap = document.querySelector('.rating');

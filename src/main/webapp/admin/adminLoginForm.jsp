@@ -105,7 +105,7 @@
 
     <div class="login-container">
         <div class="login-box">
-            <img src="${pageContext.request.contextPath}/img/logo.png" alt="궁온 로고">
+            <img src="/img/logo.png" alt="궁온 로고">
             <h2>관리자 페이지</h2>
             
             <% if ("1".equals(error)) { %>

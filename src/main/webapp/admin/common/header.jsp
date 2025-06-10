@@ -13,14 +13,14 @@
     <title>궁온 관리자 페이지</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
     <!-- 상단 네비게이션 -->
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand ps-3" href="${pageContext.request.contextPath}/admin/adminMain.jsp">
-            <img src="${pageContext.request.contextPath}/img/logo.png" alt="로고" style="height: 55px;" />
+        <a class="navbar-brand ps-3" href="/admin/adminMain.jsp">
+            <img src="/img/logo.png" alt="로고" style="height: 55px;" />
         </a>
     </nav>
     

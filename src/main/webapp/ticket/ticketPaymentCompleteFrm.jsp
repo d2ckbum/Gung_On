@@ -11,17 +11,17 @@
 <head>
 
 <!-- favicon 설정 -->
-<link rel="icon shortcut"  href="http://${defaultIP}/common/images/cs/gungOnFavicon.ico"/>
+<link rel="icon shortcut"  href="/common/images/cs/gungOnFavicon.ico"/>
 
 <title>결제완료</title>
-<c:import url="http://${defaultIP}/common/jsp/header.jsp"/>	
+<c:import url="/common/jsp/header.jsp"/>	
 
 
 <!-- 부트스트랩  CDN -->    
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"/>
 <!-- CSS 설정 -->
-<link rel="stylesheet" type="text/css" href="http://${defaultIP}/ticket/css/payment.css"/>
-<link rel="stylesheet" type="text/css" href="http://${defaultIP}/ticket/css/paymentComplete.css"/>
+<link rel="stylesheet" type="text/css" href="/ticket/css/payment.css"/>
+<link rel="stylesheet" type="text/css" href="/ticket/css/paymentComplete.css"/>
 <!-- jquery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
 
@@ -90,6 +90,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     </div><!--entireWrap-->
-    <c:import url="http://${defaultIP}/common/jsp/footer.jsp"/>
+    <c:import url="/common/jsp/footer.jsp"/>
 </body>
 </html>

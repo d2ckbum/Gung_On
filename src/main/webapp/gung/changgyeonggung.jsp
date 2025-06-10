@@ -31,7 +31,7 @@
 <body>
 
 <header data-bs-theme="dark">
- <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp" />
+ <jsp:include page="/common/jsp/header.jsp" />
 </header>
 
 <main>
@@ -101,7 +101,7 @@
 </main>
 
 <footer class="text-body-secondary py-5">
- <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp" />
+ <jsp:include page="/common/jsp/footer.jsp" />
 </footer>
 
 </body>

@@ -43,7 +43,7 @@
   <link rel="stylesheet" type="text/css" href="/course/css/users_course_style.css" />
   <c:import url="/common/jsp/external_file.jsp"/>
 =======
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/course/css/users_course_style.css" />
+	<link rel="stylesheet" type="text/css" href="/course/css/users_course_style.css" />
 	<c:import url="/common/jsp/external_file.jsp"/>
 
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
@@ -156,7 +156,7 @@
 <<<<<<< HEAD
   <jsp:include page="/common/jsp/header.jsp" />
 =======
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp" />
+  <jsp:include page="/common/jsp/header.jsp" />
 
 >>>>>>> 380e24bde21b4a74612c37e073be0c77486fb31e
   
@@ -239,7 +239,7 @@
   </main>
 
   
-  <jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp" />
+  <jsp:include page="/common/jsp/footer.jsp" />
 
   <script>
     var $j = jq;
@@ -273,7 +273,7 @@
     	    	  console.log('이미지 삭제 시도:', deletedImgSrc); // 이 부분 추가하여 src 값 확인
     	    	  
     	    	  // 서버에 삭제 요청 보내기
-    	    	  const relativePath = deletedImgSrc.split('/Gung_On/')[1]; // 상대 경로 추출
+    	    	  const relativePath = deletedImgSrc.split('/')[1]; // 상대 경로 추출
     	    	  console.log('상대 경로:', relativePath); // 상대 경로 확인
     	    	  
     	    	  if (relativePath) {
@@ -354,7 +354,7 @@
     function handleDeletedImages(newImages) {
       currentImages.forEach(src => {
         if (!newImages.has(src)) {
-          const relativePath = src.split('/Gung_On/')[1];
+          const relativePath = src.split('/')[1];
           if (relativePath) {
             $.ajax({
               url: 'deleteImage.jsp',

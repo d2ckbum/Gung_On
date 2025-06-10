@@ -8,7 +8,7 @@
 </head>
 <body>
 <script>
-		location.href = '${pageContext.request.contextPath}/admin/adminMain.jsp';
+		location.href = '/admin/adminMain.jsp';
 </script>
 </body>
 </html>

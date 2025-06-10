@@ -13,21 +13,30 @@ MemberService ms = new MemberService();
 <head>
 <meta charset="UTF-8">
 <title>SEARCH - 아이디 찾기 / 비밀번호 찾기</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/common/css/common.css">
+<link rel="stylesheet" href="/common/css/common.css">
 <c:import url="/common/jsp/external_file.jsp"/>
 
 <script>
 $(function(){
 	
 	$("#idBtn").click(function(){
+		if($("#idName").val()==""){
+			alert("이름을 입력해주세요");
+			return;
+		}
+		if($("#idEmail").val()==""){
+			alert("이메일을 입력해주세요");
+			return;
+		}
 		var paramId={name:$("#idName").val(), email:$("#idEmail").val()};
 		$.ajax({
-			  url:"${pageContext.request.contextPath}searchId_process.jsp",
+			  url:"searchId_process.jsp",
 		  type:"POST",
 		  data:paramId,
 		  dataType:"JSON",
 		  error: function(xhr){
 			  console.log(xhr.status);
+			  alert("아이디를 찾을 수 없습니다.");
 		  },
 		  success: function(jsonObj){
 			  if (jsonObj.flag) {
@@ -41,14 +50,27 @@ $(function(){
 	
 	
 	$("#passBtn").click(function(){
+		if($("#passName").val()==""){
+			alert("이름을 입력해주세요");
+			return;
+		}
+		if($("#passId").val()==""){
+			alert("아이디를 입력해주세요");
+			return;
+		}
+		if($("#passEmail").val()==""){
+			alert("이메일을 입력해주세요");
+			return;
+		}
 		var paramPass={name:$("#passName").val(),id:$("#passId").val() , email:$("#passEmail").val()};
 		$.ajax({
-			  url:"${pageContext.request.contextPath}searchPass_process.jsp",
+			  url:"searchPass_process.jsp",
 		  type:"POST",
 		  data:paramPass,
 		  dataType:"JSON",
 		  error: function(xhr){
 			  console.log(xhr.status);
+			  alert("잘 못 입력했거나 없는 아이디입니다.");
 		  },
 		  success: function(jsonObj){
 			  if (jsonObj.flag) {
@@ -66,7 +88,7 @@ $(function(){
 </head>
 <body class="page-body">
 	<!-- 상단 메뉴 등 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/header.jsp"/>
+<jsp:include page="/common/jsp/header.jsp"/>
 	<div class="search-container">
 		<h1 class="title">
 			<strong>아이디 /  비밀번호 찾기</strong>
@@ -92,7 +114,7 @@ $(function(){
 				<form method="post" id="searchPass">
 					<input type="hidden" name="action" value="changePassword"  /> 
 					<input type="text" name="name" id="passName" placeholder="이름" class="text-input"  required /> 
-					<input type="text" name="userId" id="passId" placeholder="아이디" class="text-input" required /> 
+					<input type="text" name=id id="passId" placeholder="아이디" class="text-input" required /> 
 					<input type="email" name="email" id="passEmail" placeholder="이메일"  class="text-input" required />
 					<button type="button" id="passBtn" class="submit-btn">비밀번호 찾기</button>
 				</form>
@@ -100,6 +122,6 @@ $(function(){
 		</div>
 	</div>
 	<!-- 푸터 -->
-<jsp:include page="${pageContext.request.contextPath}/common/jsp/footer.jsp"/>
+<jsp:include page="/common/jsp/footer.jsp"/>
 </body>
 </html>

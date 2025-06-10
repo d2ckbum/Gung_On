@@ -11,12 +11,11 @@ String name= request.getParameter("name");
 String email= request.getParameter("email");
 String id = request.getParameter("id");
 boolean flag = false;
-
 MemberService ms = new MemberService();
 MemberDTO mDTO = null;
 mDTO=ms.searchOneMember(id);
 
-	if(mDTO.getEmail() == email && mDTO.getName() == name){
+	if(mDTO.getUseEmail().equals(email) && mDTO.getName().equals(name) && mDTO.getId().equals(id)){
 		flag =true;
 		session.setAttribute("changePass", true);
 		session.setAttribute("id", id);
