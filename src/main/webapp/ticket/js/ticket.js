@@ -4,7 +4,7 @@
 
 $(function(){
 	
-	history.pushState({ page: 'ticket_frm' }, '', 'http://localhost/Gung_On/ticket/ticket_frm.jsp');
+	//history.pushState({ page: 'ticket_frm' }, '', 'http://localhost/Gung_On/ticket/ticket_frm.jsp');
 	
 	$('.slider').slick({
 		dots: true,
