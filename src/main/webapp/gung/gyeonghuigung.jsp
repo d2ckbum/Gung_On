@@ -8,8 +8,13 @@
 
 <meta charset="UTF-8">
 <title><c:out value="${ site_name }"/></title>
+<<<<<<< HEAD
 <c:import url="${ url }/common/jsp/external_file.jsp"/>
 <link rel="stylesheet" href="/common/css/common.css">
+=======
+<c:import url="../common/jsp/external_file.jsp"/>
+<link rel="stylesheet" href="../common/css/common.css">
+>>>>>>> branch 'final' of https://github.com/d2ckbum/Gung_On.git
 <link rel="stylesheet" href="mainGung.css">
 <link rel="stylesheet" href="sideTab.css">
 <style>
@@ -31,7 +36,11 @@
 <body>
 
 <header data-bs-theme="dark">
+<<<<<<< HEAD
  <jsp:include page="/common/jsp/header.jsp" />
+=======
+ <jsp:include page="../common/jsp/header.jsp" />
+>>>>>>> branch 'final' of https://github.com/d2ckbum/Gung_On.git
 </header>
 
 <main>
@@ -39,7 +48,7 @@
 
     <!-- ✅ 사이드탭 왼쪽 고정 -->
     <div id="side-tab">
-      <jsp:include page="${pageContext.request.contextPath}sideTab.jsp" />
+      <jsp:include page="sideTab.jsp" />
     </div>
 
     <!-- ✅ 궁 정보 내용 오른쪽 출력 -->
@@ -99,7 +108,11 @@
 </main>
 
 <footer class="text-body-secondary py-5">
+<<<<<<< HEAD
  <jsp:include page="/common/jsp/footer.jsp" />
+=======
+ <jsp:include page="../common/jsp/footer.jsp" />
+>>>>>>> branch 'final' of https://github.com/d2ckbum/Gung_On.git
 </footer>
 
 </body>

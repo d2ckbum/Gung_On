@@ -275,6 +275,11 @@ $(function(){
   <form class="signup-form" style="width: 900px; position: relative; right: 70px"  >
     <table style="width: 100%; border: 1px solid #ccc; border-collapse: collapse; text-align: center;">
       <thead style="background-color: #f9f9f9;">
+        <c:choose>
+    	<c:when test="${ empty myList }">
+        <tr><th> 예약정보가 없습니다</th> </tr>
+    	</c:when>
+		<c:otherwise>
         <tr>
           <th style="border: 1px solid #ccc; padding: 8px;">예매 정보</th>
           <th style="border: 1px solid #ccc; padding: 8px;">관람</th>
@@ -283,6 +288,8 @@ $(function(){
           <th style="border: 1px solid #ccc; padding: 8px;">예약 인원</th>
           <th style="border: 1px solid #ccc; padding: 8px;">결제 금액</th>
         </tr>
+		</c:otherwise>
+		</c:choose>
       </thead>
       
       <tbody>

@@ -6,9 +6,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title><c:out value="${ site_name }"/></title>
 <c:import url="${ url }/common/jsp/external_file.jsp"/>
 <link rel="stylesheet" href="/common/css/common.css">
+=======
+<title>경복궁</title>
+<c:import url="../common/jsp/external_file.jsp"/>
+<link rel="stylesheet" href="../common/css/common.css">
+>>>>>>> branch 'final' of https://github.com/d2ckbum/Gung_On.git
 <link rel="stylesheet" href="mainGung.css">
 <link rel="stylesheet" href="sideTab.css">
 <style>
